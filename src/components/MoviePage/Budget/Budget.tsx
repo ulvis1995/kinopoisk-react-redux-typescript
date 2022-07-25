@@ -56,4 +56,4 @@ const Budget: React.FC<BudgetProps> = ({id, movieAbout}) => {
   )
 }
 
-export default Budget;
+export default React.memo(Budget);

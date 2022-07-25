@@ -2,7 +2,8 @@ import React from 'react';
 import { FilmCartMenuProps } from '../typesProps';
 import './filmCartMenu.scss';
 
-const FilmCartMenu: React.FC<FilmCartMenuProps> = ({id, nameRu, nameOriginal, poster, ratingKinopoisk, genres, type, onClickid}) => {
+const FilmCartMenu: React.FC<FilmCartMenuProps> = ({id, nameRu, nameOriginal, 
+  poster, ratingKinopoisk, genres, type, onClickid}) => {
   const returnId = () => {
     const idFilm = id
     return onClickid(idFilm);
@@ -28,4 +29,4 @@ const FilmCartMenu: React.FC<FilmCartMenuProps> = ({id, nameRu, nameOriginal, po
   )
 };
 
-export default FilmCartMenu;
+export default React.memo(FilmCartMenu);

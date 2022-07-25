@@ -95,13 +95,15 @@ const AwardBlock: React.FC<AwardProps> = ({ id}) => {
       {awardShow 
         ? <div className='award-block'>
             <p>Количество: {awardsFilm.length}</p>
-            <Table dataSource={data} columns={columns}
-              pagination={pagination} bordered={true}
-              className='award-table'/>
+            {awardsFilm.length> 0 
+              ? <Table dataSource={data} columns={columns}
+                pagination={pagination} bordered={true}
+                className='award-table'/>
+              : ''}
           </div>
         : ''}
     </div>
   )
 };
 
-export default AwardBlock;
+export default React.memo(AwardBlock);

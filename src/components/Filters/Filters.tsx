@@ -7,7 +7,6 @@ import '../Main/main.scss';
 import { Select } from 'antd';
 const { Option } = Select;
 
-
 const Filters: React.FC<FiltersProps> = ({genresArr, 
   countryArr, setTypeMovie, setGenreMovie, 
   setCountryMovie, genre, type, country}) => {
@@ -28,7 +27,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
     <div className='main-filters'>
       <Select className='main-select-item'
       placeholder="Жанр" allowClear
-      onChange={handleChangeGenre}
+      onChange={() => handleChangeGenre(genre)}
       value={genre} 
       onClear={()=> handleChangeGenre(null)}
       >
@@ -37,7 +36,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
       </Select>
       <Select className='main-select-item'
         placeholder="Тип (кино, сериал...)"
-        onChange={handleChangeType}  allowClear
+        onChange={() => handleChangeType(type)}  allowClear
         onClear={()=> handleChangeType(null)}
         value={type}
       >
@@ -48,7 +47,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
         showSearch value={country}
         optionFilterProp="children"
         placeholder="Страна" allowClear
-        onChange={handleChangeCountry}
+        onChange={() => handleChangeCountry(country)}
         onClear={()=> handleChangeCountry(null)}
       >
         {countryArr && countryArr.map((item: {id: number, country: string}, index: number) => 
@@ -58,4 +57,4 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
   )
 };
 
-export default Filters;
+export default React.memo(Filters);

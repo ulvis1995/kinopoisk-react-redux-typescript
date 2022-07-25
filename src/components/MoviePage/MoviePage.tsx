@@ -50,4 +50,4 @@ const MoviePage: React.FC = () => {
   )
 };
 
-export default MoviePage;
+export default React.memo(MoviePage);

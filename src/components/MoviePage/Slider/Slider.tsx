@@ -33,14 +33,16 @@ const Slider: React.FC<SliderProps> = ({id, movieAbout}) => {
   
   return (
     <React.Fragment>
-      {sliderImage.length >1 
+      {sliderImage.length >2 
         ?<div className='film-item film-slider'>
           <a className="previous" onClick={onClickpreviousSlide}>&#10094;</a>
-          <div className="item-slide"
-            key={prevplusImgIndex}>
-            <img src={sliderImage.length>0 ? sliderImage[prevplusImgIndex].previewUrl : ''} 
-              alt='Кадр из фильма' height='169px'/>
-          </div>
+          {sliderImage.length >3 
+            ?<div className="item-slide"
+              key={prevplusImgIndex}>
+              <img src={sliderImage.length>0 ? sliderImage[prevplusImgIndex].previewUrl : ''} 
+                alt='Кадр из фильма' height='169px'/>
+            </div>
+            : ''}
           <div className="item-slide"
             key={prevImgIndex}>
             <img src={sliderImage.length>0 ? sliderImage[prevImgIndex].previewUrl : ''} 
@@ -56,16 +58,18 @@ const Slider: React.FC<SliderProps> = ({id, movieAbout}) => {
             <img src={sliderImage.length>0 ? sliderImage[nextImgIndex].previewUrl : ''} 
               alt='Кадр из фильма' height='169px'/>
           </div>
-          <div className="item-slide"
-            key={nextplusImgIndex}>
-            <img src={sliderImage.length>0 ? sliderImage[nextplusImgIndex].previewUrl : ''} 
-              alt='Кадр из фильма' height='169px'/>
-          </div>
-          <a className="next" onClick={onClicknextSlide}>&#10095;</a>
+          {sliderImage.length >3
+            ?<div className="item-slide"
+              key={nextplusImgIndex}>
+              <img src={sliderImage.length>0 ? sliderImage[nextplusImgIndex].previewUrl : ''} 
+                alt='Кадр из фильма' height='169px'/>
+            </div>
+            : ''}
+            <a className="next" onClick={onClicknextSlide}>&#10095;</a>
         </div>
         : ''}
     </React.Fragment>
   )
 }
 
-export default Slider;
+export default React.memo(Slider);

@@ -79,4 +79,4 @@ const Staff: React.FC<StaffProps> = ({id}) => {
   )
 }
 
-export default Staff;
+export default React.memo(Staff);

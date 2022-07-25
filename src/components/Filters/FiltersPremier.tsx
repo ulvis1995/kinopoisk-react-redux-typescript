@@ -43,4 +43,4 @@ const FiltersPremier: React.FC<FiltersPremieresProps> = ({setMonth, setYear, yea
   )
 };
 
-export default FiltersPremier;
+export default React.memo(FiltersPremier);

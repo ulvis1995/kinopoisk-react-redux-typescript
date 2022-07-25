@@ -11,8 +11,8 @@ export interface FilmCartMenuProps {
 };
 
 export interface FiltersProps {
-  genresArr: [{ id: number, genre: string}],
-  countryArr: [{id: number, country: string}],
+  genresArr: { id: number, genre: string}[],
+  countryArr: {id: number, country: string}[],
   setTypeMovie: (type: string | null) => void,
   setGenreMovie: (genre: string | null) => void,
   setCountryMovie: (country: string | null) => void,

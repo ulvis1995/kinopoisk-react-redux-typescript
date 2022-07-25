@@ -4,16 +4,6 @@ import axios from 'axios';
 import { Dispatch } from 'redux';
 import { FilterValueActionTypes } from '../types/filterValue';
 
-export const setGenresValue = (genresValue: object[]) => ({
-  type: FilterValueActionTypes.GENRES_VALUE,
-  payload: genresValue,
-});
-
-export const setCountriesValue = (countryValue: object[]) => ({
-  type: FilterValueActionTypes.COUNTRY_VALUE,
-  payload: countryValue,
-});
-
 export const fetchFilters = () => (dispatch: Dispatch) => {
 
   axios.get(`${urlFilms}/films/filters`,
@@ -31,3 +21,13 @@ export const fetchFilters = () => (dispatch: Dispatch) => {
           ))
       })
 };
+
+export const setGenresValue = (genresValue: { id: number, genre: string}[]) => ({
+  type: FilterValueActionTypes.GENRES_VALUE,
+  payload: genresValue,
+});
+
+export const setCountriesValue = (countryValue: { id: number, genre: string}[]) => ({
+  type: FilterValueActionTypes.COUNTRY_VALUE,
+  payload: countryValue,
+});

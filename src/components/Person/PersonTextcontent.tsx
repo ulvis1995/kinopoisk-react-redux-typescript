@@ -48,4 +48,4 @@ const PersonTextcontent: React.FC<PersonTextProps> = ({personInfo}) => {
   )
 };
 
-export default PersonTextcontent;
+export default React.memo(PersonTextcontent);

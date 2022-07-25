@@ -94,4 +94,4 @@ const SeasonsInfo: React.FC<SeasonsProps> = ({id}) => {
   )
 };
 
-export default SeasonsInfo;
+export default React.memo(SeasonsInfo);

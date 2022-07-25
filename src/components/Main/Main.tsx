@@ -17,7 +17,7 @@ const Main: React.FC = () => {
   const {fetchMovies, fetchFilters, setSortByType, 
         setSortByGenre, setSortByCountry, setCurrent, 
         setMovieId} = useActions ();
-        
+    
   const {type, genre, country, search} = useTypedSelector(({filters}) => filters);
   const {countryValue, genresValue} = useTypedSelector(({filtersValue}) => filtersValue);
   const {current, movie, totalMovie, isLoaded} = useTypedSelector(({movieListParametr}) => movieListParametr);
@@ -26,13 +26,9 @@ const Main: React.FC = () => {
     fetchMovies(current, type, genre, country, search);
   }, [current, type, genre, country, search]);
 
-  React.useEffect (() => {
+  React.useEffect (() => { 
     fetchFilters()
   }, []);
-
-  React.useEffect (() => {
-    setSortByType(type)
-  }, [type]);
 
   const onSelectType = React.useCallback ((type: string | null) => {
     setSortByType(type)

@@ -118,4 +118,4 @@ const Person: React.FC<PersonProps> = ({staffId}) => {
   )
 };
 
-export default Person;
+export default React.memo(Person);

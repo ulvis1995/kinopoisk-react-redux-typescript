@@ -84,4 +84,4 @@ const Premieres: React.FC<PremieresProps> = ({activeLink}) => {
   )
 }
 
-export default Premieres;
+export default React.memo(Premieres);

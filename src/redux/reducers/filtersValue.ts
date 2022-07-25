@@ -1,8 +1,8 @@
 import {FilterValueAction, FilterValueState, FilterValueActionTypes} from '../types/filterValue'
 
 const initialState: FilterValueState = {
-  genresValue: [{id: 0, genre: ''}],
-  countryValue: [{id: 0, country: ''}],
+  genresValue: [],
+  countryValue: [],
 };
 
 const filtersValue = (state = initialState, action: FilterValueAction): FilterValueState => {
@@ -22,4 +22,4 @@ const filtersValue = (state = initialState, action: FilterValueAction): FilterVa
   return state;
 };
 
-export default filtersValue;
+export default filtersValue; 

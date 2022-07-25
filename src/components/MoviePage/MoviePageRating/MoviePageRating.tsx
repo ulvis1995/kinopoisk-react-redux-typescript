@@ -25,4 +25,4 @@ const MoviePageRating: React.FC<MovieRaitingProps> = ({moviePage}) =>  {
   )
 };
 
-export default MoviePageRating;
+export default React.memo(MoviePageRating);

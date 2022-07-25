@@ -40,4 +40,4 @@ const MoviePageStats: React.FC<MovieRaitingProps> = ({moviePage}) => {
   )
 };
 
-export default MoviePageStats;
+export default React.memo(MoviePageStats);

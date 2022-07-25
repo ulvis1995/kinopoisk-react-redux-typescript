@@ -1,4 +1,4 @@
-export type movieParament = {
+export interface movieParament {
   kinopoiskId: number,
   imdbId: string,
   nameRu: string,

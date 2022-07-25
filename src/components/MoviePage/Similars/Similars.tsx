@@ -57,7 +57,7 @@ const Similars: React.FC<SimilarProps> = ({id}) => {
           ?<button className='button button-down' onClick={onClickSimilar}>&#10094;</button>
           :<button className='button button-up' onClick={onClickSimilar}>&#10094;</button>}
       </div>
-      {similarShow 
+      {similarShow && similars.length !==0
         ?<div className='film-item film-slider-similar'>
           {similars.length>3 
            ?<a className="previous" onClick={onClickpreviousSlide}>&#10094;</a> 
@@ -130,4 +130,4 @@ const Similars: React.FC<SimilarProps> = ({id}) => {
   )
 };
 
-export default Similars;
+export default React.memo(Similars);

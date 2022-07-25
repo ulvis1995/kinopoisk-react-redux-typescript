@@ -2,7 +2,7 @@ import React from 'react';
 import instagram from "../../img/footer/icons8-instagram.svg";
 import vk from "../../img/footer/icons8-vk-circled.svg";
 import whatsapp from "../../img/footer/icons8-whatsapp.svg";
-import './footer.scss'
+import './footer.scss';
 
 const Footer: React.FC = () => {
   return (

@@ -31,11 +31,11 @@ const MovieFilmAbout: React.FC<MovieProps> = ({id, typeFilm}) => {
     ? <div className='film-info'>
         <div className='film-info-list'>
           <Staff id={id} />
-          {/* {typeFilm !== 'FILM' ? <SeasonsInfo id={id}/> : null}  */}
-          {/* <Slider id={id} movieAbout={movieAbout}/> */}
-          {/* <AwardBlock id={id}/> */}
-          {/* {typeFilm === 'FILM' ? <Budget id={id} movieAbout={movieAbout}/> : null} */}
-          {/* <Similars id={id}/> */}
+          {typeFilm !== 'FILM' ? <SeasonsInfo id={id}/> : null} 
+          <Slider id={id} movieAbout={movieAbout}/>
+          <AwardBlock id={id}/>
+          {typeFilm === 'FILM' ? <Budget id={id} movieAbout={movieAbout}/> : null}
+          <Similars id={id}/>
         </div>
       </div>
     :<button className='film-button'
@@ -47,4 +47,4 @@ const MovieFilmAbout: React.FC<MovieProps> = ({id, typeFilm}) => {
   )
 };
 
-export default MovieFilmAbout;
+export default React.memo(MovieFilmAbout);

@@ -30,7 +30,7 @@ export const fetchMovies = (current: number, type: string | null, genre: string 
     payload: false,
   });
 
-  axios.get(
+ axios.get(
     `${urlFilms}/films?page=${current}&type=${type ? type : ''}&genres=${genre ? genre : ''}&countries=${country ? country : ''}&keyword=${search ? search : ''}`,
     {headers: {
       'X-API-KEY': `${token}`,

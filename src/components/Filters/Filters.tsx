@@ -27,7 +27,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
     <div className='main-filters'>
       <Select className='main-select-item'
       placeholder="Жанр" allowClear
-      onChange={() => handleChangeGenre(genre)}
+      onChange={handleChangeGenre}
       value={genre} 
       onClear={()=> handleChangeGenre(null)}
       >
@@ -36,7 +36,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
       </Select>
       <Select className='main-select-item'
         placeholder="Тип (кино, сериал...)"
-        onChange={() => handleChangeType(type)}  allowClear
+        onChange={handleChangeType}  allowClear
         onClear={()=> handleChangeType(null)}
         value={type}
       >
@@ -47,7 +47,7 @@ const Filters: React.FC<FiltersProps> = ({genresArr,
         showSearch value={country}
         optionFilterProp="children"
         placeholder="Страна" allowClear
-        onChange={() => handleChangeCountry(country)}
+        onChange={handleChangeCountry}
         onClear={()=> handleChangeCountry(null)}
       >
         {countryArr && countryArr.map((item: {id: number, country: string}, index: number) => 

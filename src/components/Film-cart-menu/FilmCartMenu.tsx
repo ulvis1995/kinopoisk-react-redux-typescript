@@ -14,7 +14,7 @@ const FilmCartMenu: React.FC<FilmCartMenuProps> = ({id, nameRu, nameOriginal,
     onClick={returnId}>
       <div className='film-cart-img-block'> 
         <img  className='film-cart-img' 
-          src={poster} width='250px' height='375px' alt={nameRu}/>
+          src={poster} width='250px' height='375px' alt='Фото'/>
         {ratingKinopoisk === undefined 
           ? ''
           :<span className='film-cart-point'>

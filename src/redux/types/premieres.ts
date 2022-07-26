@@ -3,7 +3,7 @@ type PremieresItem = {
   nameRu: string | null | undefined,
   nameEn: string,
   year: number,
-  posterUrl: string | null | undefined,
+  posterUrl: string | undefined,
   posterUrlPreview: string,
   countries: [{country: string}],
   genres: [{genre: string}],

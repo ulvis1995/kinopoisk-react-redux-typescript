@@ -5,7 +5,7 @@ export interface ITop {
   genres: [{genre: string}],
   nameEn: string | null,
   nameRu: string | null | undefined,
-  posterUrl: string | null | undefined
+  posterUrl: string | undefined
   posterUrlPreview: string
   rating: number | string
   ratingChange: number | null

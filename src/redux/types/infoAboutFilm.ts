@@ -20,7 +20,7 @@ export interface AwardFilm  {
       nameRu: string | null | undefined,
       nameEn: string | null,
       sex: string,
-      posterUrl: string | null | undefined,
+      posterUrl: string | undefined,
       growth: number | null,
       birthday: string | null,
       death: string | null,

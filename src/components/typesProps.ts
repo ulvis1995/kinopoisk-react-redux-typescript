@@ -113,7 +113,7 @@ export interface PersonInfoItem {
   nameEn: string | null,
   nameRu: string | null | undefined,
   personId: number,
-  posterUrl: string,
+  posterUrl: string | null | undefined
   profession: string,
   sex: string,
   spouses: [{

@@ -4,7 +4,7 @@ export interface movieParament {
   nameRu: string | null | undefined,
   nameEn: string,
   nameOriginal: string,
-  posterUrl: string,
+  posterUrl: string | null | undefined
   posterUrlPreview: string,
   ratingKinopoisk: number,
   ratingImdb: number,

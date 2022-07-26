@@ -43,7 +43,7 @@ export type PremieresItem = {
   ratingKinopoisk?: number | string,
   type?: string,
   year: number,
-  posterUrl: string,
+  posterUrl: string | null | undefined,
   posterUrlPreview: string,
   countries: [
     {country: string}

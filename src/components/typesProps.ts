@@ -1,6 +1,6 @@
 export interface FilmCartMenuProps {
   id: number,
-  nameRu: string | null,
+  nameRu: string | null | undefined,
   nameOriginal?: string | null,
   poster?: string,
   ratingKinopoisk?: number | string | null,

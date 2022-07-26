@@ -1,7 +1,7 @@
 export interface movieParament {
   kinopoiskId: number,
   imdbId: string,
-  nameRu: string,
+  nameRu: string | null | undefined,
   nameEn: string,
   nameOriginal: string,
   posterUrl: string,

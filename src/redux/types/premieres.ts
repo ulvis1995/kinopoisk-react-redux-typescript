@@ -1,6 +1,6 @@
 type PremieresItem = {
   kinopoiskId: number,
-  nameRu: string,
+  nameRu: string | null | undefined,
   nameEn: string,
   year: number,
   posterUrl: string,

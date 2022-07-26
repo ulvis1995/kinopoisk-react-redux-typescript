@@ -50,7 +50,7 @@ export interface MovieRaitingProps {moviePage: {
   logoUrl: string | null
   nameEn: string | null
   nameOriginal: string | null
-  nameRu: string | null
+  nameRu: string | null | undefined
   posterUrl: string | null | undefined
   posterUrlPreview: string | null
   productionStatus: null
@@ -104,14 +104,14 @@ export interface PersonInfoItem {
     filmId: number,
     general: boolean | null,
     nameEn: string | null,
-    nameRu: string | null,
+    nameRu: string | null | undefined,
     professionKey: string | null,
     rating: string | number | null,
   }]
   growth: number | null,
   hasAwards: number | null,
   nameEn: string | null,
-  nameRu: string | null,
+  nameRu: string | null | undefined,
   personId: number,
   posterUrl: string,
   profession: string,

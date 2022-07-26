@@ -7,7 +7,7 @@ export interface DataTypeAward {
   persons: {
     kinopoiskId: number,
     webUrl: string,
-    nameRu: string | null,
+    nameRu: string | null | undefined,
     nameEn: string | null,
     sex: string,
     posterUrl: string | null,
@@ -31,7 +31,7 @@ export interface DataTypePerson {
     filmId: number,
     general: boolean | null,
     nameEn: string | null,
-    nameRu: string | null,
+    nameRu: string | null | undefined,
     professionKey: string | null
     rating: string | number | null
   }

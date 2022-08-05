@@ -4,7 +4,7 @@ export interface ITop {
   filmLength: string | null,
   genres: [{genre: string}],
   nameEn: string | null,
-  nameRu: string | null,
+  nameRu: string | undefined,
   posterUrl: string
   posterUrlPreview: string
   rating: number | string

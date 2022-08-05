@@ -16,7 +16,7 @@ export interface IMoviePage {
   logoUrl: string | null
   nameEn: string | null
   nameOriginal: string | null
-  nameRu: string | null | undefined
+  nameRu: string | undefined
   posterUrl: string | null | undefined
   posterUrlPreview: string | null
   productionStatus: null

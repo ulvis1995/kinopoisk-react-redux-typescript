@@ -3,7 +3,7 @@ export interface SeasonItem {
   episodes: {
     episodeNumber: number
     nameEn: string | null
-    nameRu: string | null
+    nameRu: string | undefined
     releaseDate: string | null
     seasonNumber: number
     synopsis: string | null
@@ -20,13 +20,13 @@ export type BudgetItem = {
 
 export type SilimarItem = {
   filmId: number,
-  nameRu: string | null | undefined,
+  nameRu: string | undefined,
   nameOriginal: string,
   posterUrlPreview: string
 }
 
 export interface staffArr {
-  nameRu: string | null | undefined, 
+  nameRu: string | undefined, 
   staffId: number, 
   professionKey: string, 
   nameEn: string,
@@ -37,7 +37,7 @@ export interface staffArr {
 
 export type PremieresItem = {
   kinopoiskId: number,
-  nameRu: string | null | undefined,
+  nameRu: string | undefined,
   nameEn: string,
   nameOriginal?: string,
   ratingKinopoisk?: number | string,

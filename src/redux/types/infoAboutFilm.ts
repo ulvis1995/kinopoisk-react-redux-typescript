@@ -1,7 +1,7 @@
 export interface Episodes {
   episodeNumber: number
   nameEn: string | null
-  nameRu: string | null | undefined
+  nameRu: string | undefined
   releaseDate: string | null
   seasonNumber: number
   synopsis: string | null
@@ -17,7 +17,7 @@ export interface AwardFilm  {
     {
       kinopoiskId: number,
       webUrl: string,
-      nameRu: string | null | undefined,
+      nameRu: string | undefined,
       nameEn: string | null,
       sex: string,
       posterUrl: string | null,

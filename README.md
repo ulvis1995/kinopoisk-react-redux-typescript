@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Аналог Кинопоиска с использованием неофициальной базы данных (https://kinopoiskapiunofficial.tech), поиск, фильтрация и переходы между страницами, подключен React, TS, antd

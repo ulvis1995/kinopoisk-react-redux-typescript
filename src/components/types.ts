@@ -20,13 +20,13 @@ export type BudgetItem = {
 
 export type SilimarItem = {
   filmId: number,
-  nameRu: string | undefined,
+  nameRu: string,
   nameOriginal: string,
   posterUrlPreview: string
 }
 
 export interface staffArr {
-  nameRu: string | undefined, 
+  nameRu: string, 
   staffId: number, 
   professionKey: string, 
   nameEn: string,
@@ -37,7 +37,7 @@ export interface staffArr {
 
 export type PremieresItem = {
   kinopoiskId: number,
-  nameRu: string | undefined,
+  nameRu: string,
   nameEn: string,
   nameOriginal?: string,
   ratingKinopoisk?: number | string,

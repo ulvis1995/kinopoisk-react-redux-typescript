@@ -17,7 +17,7 @@ export interface IMoviePage {
   nameEn: string | null
   nameOriginal: string | null
   nameRu: string | undefined
-  posterUrl: string | null | undefined
+  posterUrl: string | undefined
   posterUrlPreview: string | null
   productionStatus: null
   ratingAgeLimits: string | null

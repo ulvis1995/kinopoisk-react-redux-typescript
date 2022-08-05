@@ -10,7 +10,7 @@ export interface DataTypeAward {
     nameRu: string | undefined,
     nameEn: string | null,
     sex: string,
-    posterUrl: string | null,
+    posterUrl: string | undefined,
     growth: number | null,
     birthday: string | null,
     death: string | null,
